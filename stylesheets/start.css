@@ -1,0 +1,165 @@
+@font-face {
+	font-family: Jackey;
+	src: local('fonts/jackeyfont.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: SanFranciscoDisplay;
+    src:url("~/Documents/Projects/HTML/startpage/fonts/'System San Francisco Display Regular.tff'") format("truetype");
+}
+
+* {
+    font-family: 'DotGothic16';
+}
+
+body {
+    background-color: #010011;
+}
+
+hr {
+    color: #a4d2f1;
+}
+
+#welcomeText {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 5%;
+    left: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#welcomeText > h1 {
+    color: #a4d2f1;
+    text-shadow: 0px 0px 2px #a4d2f1;
+    text-decoration: underline;
+}
+
+#headerImage {
+    height: 200px;
+    width: 400px;
+    border: 1px solid #a4d2f1;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 200px;
+    left: 50%;
+}
+
+p {
+    font-size: 24px;
+
+    color: #a4d2f1;
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#flexbox {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+
+    display: flex;
+}
+
+#flexbox > div {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    text-align: center;
+    color: #a4d2f1;
+
+    margin: 10px;
+    padding: 20px;
+
+    border: 1px solid #a4d2f1;
+
+    transform: scale(1.0);
+    transition-duration: 0.3s;
+}
+
+#flexbox > div:hover {
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+    color: #a4d2f1;
+
+    white-space: nowrap;
+}
+a:visited {
+    text-decoration: none;
+    color: #a4d2f1;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* BLINKING CURSOR */
+.blinking-cursor {
+    text-shadow: 0px 0px 2px #a4d2f1;
+    font-weight: 100;
+    font-size: 30px;
+    color: #a4d2f1;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: #a4d2f1;
+  }
+  50% {
+    color: transparent;
+    text-shadow: 0px 0px 2px black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
