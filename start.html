@@ -3,8 +3,12 @@
 <html>
     <head>
         <title>Home</title>
-        <link rel="stylesheet" href="stylesheets/start.css">
+        <link rel="stylesheet" media="screen and (min-width: 950px)" href="stylesheets/desktop_media.css">
+        <link rel="stylesheet" media="screen and (max-width: 950px)" href="stylesheets/mobile_media.css">
+        <script src="javascript/start.js"></script>
+
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +21,15 @@
     <body>
         <div id="welcomeText">
             <h1>Welcome back, 先生</h1>
+            <p id="greeting"></p>
             <span class="blinking-cursor">|</span>
         </div>
-        <img id="headerImage" src="images/totoro.gif"> 
+
+        <img id="headerImage" src="images/totoro.gif" onclick="imageClick()"> 
+        
+        <form id="search" method="get" action="https://www.google.com/search">
+            <input type="text" name="q" size="31" placeholder="Search">
+        </form>
 
         <div id="flexbox">
             <div id="social">
@@ -28,9 +38,9 @@
                 <br>
                 <a href="http://twitter.com">Twitter</a>
                 <br>
-                <a href="http://reddit.com">Reddit</a>
-                <br>
                 <a href="http://4chan.org">4chan</a>
+                <br>
+                <a href="http://7chan.org">7chan</a>
             </div>
             <div id="entertainment">
                 <h3>Entertainment</h3><hr>
@@ -71,6 +81,24 @@
                 <a href="http://w3schools.com">W3</a>
                 <br>
                 <a href="http://discord.com/developers/applications">Discord Developer Portal</a>
+            </div>
+            <div id="infosec">
+                <h3>Hacking</h3><hr>
+                <a href="https://ine.com/">INE</a>
+                <br>
+                <a href="http://tryhackme.com">Try Hack Me</a>
+                <br>
+                <a href="https://www.hackthebox.eu/">Hack the Box</a>
+                <br>
+                <a href="http://ctftime.org">CTF Time</a>
+            </div>
+            <div id="torrents">
+                <h3>Torrents</h3><hr>
+                <a href="https://thepiratebay.by/">Pirate Bay</a>
+                <br>
+                <a href="https://1337x.to/">1337x</a>
+                <br>
+                <a href="https://www.torlock.com/">Torlock</a>
             </div>
         </div>
     </body>

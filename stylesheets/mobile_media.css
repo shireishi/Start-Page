@@ -1,0 +1,209 @@
+:root {
+    --foreground-color: #a094c8;
+    --background-color: #01091c;
+
+}
+
+@font-face {
+	font-family: Jackey;
+	src: local('fonts/jackeyfont.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: SanFranciscoDisplay;
+    src:url("~/Documents/Projects/HTML/startpage/fonts/'System San Francisco Display Regular.tff'") format("truetype");
+}
+
+* {
+    font-family: 'DotGothic16';
+}
+
+body {
+    background-color: var(--background-color);
+    overflow: show;
+}
+
+/*
+@media (max-width: 950px) {
+    #flexbox {
+        flex-direction: column;
+    }
+}
+*/
+
+hr {
+    color: var(--foreground-color);
+}
+
+#welcomeText {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 5%;
+    left: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#welcomeText > h1 {
+    color: var(--foreground-color);
+    text-shadow: 0px 0px 2px var(--foreground-color);
+    text-decoration: underline;
+}
+
+/* This is the CSS for the search bar */
+#search {
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1.0);
+
+    left: 50%; top: 35%;
+
+    color: var(--foreground-color);
+    transition-duration: 0.3s;
+}
+#search:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+#search > input {
+    background-color: var(--background-color);
+    border: 1px solid var(--foreground-color);
+    outline-width: 0;
+    outline: none;
+
+    color: var(--foreground-color);
+
+    font-size: 16px;
+}
+
+#headerImage {
+    height: 200px;
+    width: 400px;
+    border: 1px solid var(--foreground-color);
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%; top: 20%;
+}
+#headerImage:hover {
+    cursor: pointer;
+}
+
+p {
+    font-size: 24px;
+
+    color: var(--foreground-color);
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#flexbox {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 130%;
+
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#flexbox > div {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--foreground-color);
+
+    margin: 10px;
+    padding: 20px;
+
+    border: 1px solid var(--foreground-color);
+
+    transform: scale(1.0);
+    transition-duration: 0.3s;
+}
+
+#flexbox > div:hover {
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+    color: var(--foreground-color);
+
+    white-space: nowrap;
+}
+a:visited {
+    text-decoration: none;
+    color: var(--foreground-color);
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* BLINKING CURSOR */
+.blinking-cursor {
+    text-shadow: 0px 0px 2px var(--foreground-color);
+    font-weight: 100;
+    font-size: 30px;
+    color: var(--foreground-color);
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: var(--foreground-color);
+  }
+  50% {
+    color: transparent;
+    text-shadow: 0px 0px 2px black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
