@@ -11,6 +11,9 @@ let debug = false;
 let totoroGif = "file:///home/elarajade/Documents/Projects/HTML/startpage/images/totoro.gif";
 let spiritedGif = "file:///home/elarajade/Documents/Projects/HTML/startpage/images/spirited.gif";
 
+if (debug == true)
+console.log(`${$(window).width()}x${$(window).height()}`);
+
 function oppositeGif(currentGif) {
     if (currentGif == totoroGif) {
         return spiritedGif;
